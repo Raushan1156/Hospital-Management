@@ -26,10 +26,7 @@ public class Department {
     Instant createdAt;
 
     @OneToOne
-    @JoinColumn(name = "head_doctor_id")
+    @JoinColumn(name = "head_doctor_id", nullable = false)
     Doctor doctor;  // owning side
-
-    @ManyToMany
-    List<Doctor> doctors = new ArrayList<>();
 
 }

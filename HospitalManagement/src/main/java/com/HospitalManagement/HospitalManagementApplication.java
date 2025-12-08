@@ -7,12 +7,12 @@ import java.util.TimeZone;
 
 @SpringBootApplication
 public class HospitalManagementApplication {
-	static {
-		TimeZone.setDefault(TimeZone.getTimeZone("Asia/Kolkata"));
-	}
 
 	public static void main(String[] args) {
+
 		SpringApplication.run(HospitalManagementApplication.class, args);
+		System.out.println("JVM TZ = " + TimeZone.getDefault().getID());
 	}
+
 
 }

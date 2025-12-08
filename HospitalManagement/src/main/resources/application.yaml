@@ -1,12 +1,12 @@
 server:
-  port: 9000
+  port: 9001
 
 spring:
   application:
     name: HospitalManagement
 
   datasource:
-    url: jdbc:postgresql://localhost:9000/hospital_management
+    url: jdbc:postgresql://localhost:9000/testDB
     username: postgres
     password: postgres
     driver-class-name: org.postgresql.Driver
@@ -19,4 +19,4 @@ spring:
       hibernate:
         jdbc:
           time_zone: Asia/Kolkata
-#    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    database-platform: org.hibernate.dialect.PostgreSQLDialect

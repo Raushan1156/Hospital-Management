@@ -31,7 +31,13 @@ public class Doctor {
 //    @JoinColumn(name = "appointment_id")
     List<Appointment> appointments = new ArrayList<>(); // inverse side
 
+    // owning side
     @ManyToMany
+//    @JoinTable(
+//            name = "doctor_departments"
+////            joinColumns = @JoinColumn(name = "doctor_id"),
+////            inverseJoinColumns = @JoinColumn(name = "department_id")
+//    )
     List<Department> departments = new ArrayList<>();
 
     @OneToOne(mappedBy = "doctor")
