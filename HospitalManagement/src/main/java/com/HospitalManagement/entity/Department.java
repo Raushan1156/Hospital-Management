@@ -7,7 +7,9 @@ import org.hibernate.annotations.CreationTimestamp;
 
 import java.time.Instant;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 @AllArgsConstructor
 @NoArgsConstructor
@@ -28,5 +30,8 @@ public class Department {
     @OneToOne
     @JoinColumn(name = "head_doctor_id", nullable = false)
     Doctor doctor;  // owning side
+
+    @ManyToMany(mappedBy = "departments")
+    Set<Doctor> doctors = new HashSet<>();
 
 }

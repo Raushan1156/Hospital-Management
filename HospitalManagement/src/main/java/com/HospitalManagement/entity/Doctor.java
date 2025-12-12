@@ -7,7 +7,9 @@ import org.hibernate.annotations.CreationTimestamp;
 
 import java.time.Instant;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 @AllArgsConstructor
 @NoArgsConstructor
@@ -33,12 +35,12 @@ public class Doctor {
 
     // owning side
     @ManyToMany
-//    @JoinTable(
-//            name = "doctor_departments"
-////            joinColumns = @JoinColumn(name = "doctor_id"),
-////            inverseJoinColumns = @JoinColumn(name = "department_id")
-//    )
-    List<Department> departments = new ArrayList<>();
+    @JoinTable(
+            name = "doctor_department",
+            joinColumns = @JoinColumn(name = "doctor_id"),
+            inverseJoinColumns = @JoinColumn(name = "department_id")
+    )
+    Set<Department> departments = new HashSet<>();
 
     @OneToOne(mappedBy = "doctor")
 //    @JoinColumn(name = "department_id")
