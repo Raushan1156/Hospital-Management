@@ -29,6 +29,4 @@ public class PatientDto {
 
     @CreationTimestamp
     Instant createdDate;
-    InsuranceEntity insuranceEntity;
-    List<AppointmentEntity> appointmentEntity = new ArrayList<>();
 }
