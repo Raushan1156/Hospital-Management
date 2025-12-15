@@ -6,7 +6,8 @@ import lombok.experimental.FieldDefaults;
 import org.hibernate.annotations.CreationTimestamp;
 
 import java.time.Instant;
-import java.util.Date;
+import java.util.HashSet;
+import java.util.Set;
 
 @AllArgsConstructor
 @NoArgsConstructor
@@ -15,18 +16,21 @@ import java.util.Date;
 @Builder
 @Entity
 @FieldDefaults(level = AccessLevel.PRIVATE)
-public class Insurance {
+@Table(name = "Department")
+public class DepartmentEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     Long id;
-    String policyNumber;
-    String provider;
-    Date validUntil;
+    String name;
     @CreationTimestamp
     Instant createdAt;
 
     @OneToOne
-    @JoinColumn(name = "patient_id")
-    Patient patient; // Owning side
+    @JoinColumn(name = "head_doctor_id", nullable = false)
+    DoctorEntity doctorEntity;  // owning side
+
+    @ManyToMany(mappedBy = "departmentEntities")
+    Set<DoctorEntity> doctorEntities = new HashSet<>();
+
 }

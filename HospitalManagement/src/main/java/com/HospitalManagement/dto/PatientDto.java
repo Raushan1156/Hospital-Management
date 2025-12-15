@@ -1,10 +1,11 @@
-package com.HospitalManagement.entity;
+package com.HospitalManagement.dto;
 
+import com.HospitalManagement.entity.AppointmentEntity;
+import com.HospitalManagement.entity.InsuranceEntity;
 import jakarta.persistence.*;
 import lombok.*;
 import lombok.experimental.FieldDefaults;
 import org.hibernate.annotations.CreationTimestamp;
-import org.springframework.data.annotation.AccessType;
 
 import java.time.Instant;
 import java.util.ArrayList;
@@ -16,12 +17,9 @@ import java.util.List;
 @Getter
 @Setter
 @Builder
-@Entity
 @FieldDefaults(level = AccessLevel.PRIVATE)
-public class Patient {
+public class PatientDto {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     Long id;
     String name;
     String gender;
@@ -31,12 +29,6 @@ public class Patient {
 
     @CreationTimestamp
     Instant createdDate;
-
-    @OneToOne(mappedBy = "patient")
-//    @JoinColumn(name = "policy_id")
-    Insurance insurance; // inverse side
-
-    @OneToMany(mappedBy = "patient")
-//    @JoinColumn(name = "appointment_id")
-    List<Appointment> appointment = new ArrayList<>(); // inverse side
+    InsuranceEntity insuranceEntity;
+    List<AppointmentEntity> appointmentEntity = new ArrayList<>();
 }

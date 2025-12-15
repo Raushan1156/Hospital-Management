@@ -13,7 +13,8 @@ import java.time.Instant;
 @Builder
 @Entity
 @FieldDefaults(level = AccessLevel.PRIVATE)
-public class Appointment {
+@Table(name = "Appointment")
+public class AppointmentEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     Long id;
@@ -23,9 +24,9 @@ public class Appointment {
 
     @ManyToOne
     @JoinColumn(name = "patient_id")
-    Patient patient;  // owning side
+    PatientEntity patientEntity;  // owning side
 
     @ManyToOne
     @JoinColumn(name = "doctor_id")
-    Doctor doctor;  // owning side
+    DoctorEntity doctorEntity;  // owning side
 }

@@ -18,7 +18,8 @@ import java.util.Set;
 @Builder
 @Entity
 @FieldDefaults(level = AccessLevel.PRIVATE)
-public class Doctor {
+@Table(name = "Doctor")
+public class DoctorEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     Long id;
@@ -29,9 +30,9 @@ public class Doctor {
     @CreationTimestamp
     Instant createdAt;
 
-    @OneToMany(mappedBy = "doctor")
+    @OneToMany(mappedBy = "doctorEntity")
 //    @JoinColumn(name = "appointment_id")
-    List<Appointment> appointments = new ArrayList<>(); // inverse side
+    List<AppointmentEntity> appointmentEntities = new ArrayList<>(); // inverse side
 
     // owning side
     @ManyToMany
@@ -40,9 +41,9 @@ public class Doctor {
             joinColumns = @JoinColumn(name = "doctor_id"),
             inverseJoinColumns = @JoinColumn(name = "department_id")
     )
-    Set<Department> departments = new HashSet<>();
+    Set<DepartmentEntity> departmentEntities = new HashSet<>();
 
-    @OneToOne(mappedBy = "doctor")
+    @OneToOne(mappedBy = "doctorEntity")
 //    @JoinColumn(name = "department_id")
-    Department department; // inverse side
+    DepartmentEntity departmentEntity; // inverse side
 }
