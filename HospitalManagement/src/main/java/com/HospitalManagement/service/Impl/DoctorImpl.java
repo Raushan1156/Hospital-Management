@@ -12,11 +12,15 @@ import java.util.List;
 import java.util.stream.Stream;
 
 @Service
-@RequiredArgsConstructor
+//@RequiredArgsConstructor
 public class DoctorImpl implements Doctor {
 
     private final DoctorRepository doctorRepository;
     private final ModelMapper modelMapper;
+    public DoctorImpl(DoctorRepository doctorRepository, ModelMapper modelMapper){
+        this.modelMapper = modelMapper;
+        this.doctorRepository = doctorRepository;
+    }
 
     @Override
     public DoctorDto getDoctorById(Long id) {

@@ -9,11 +9,14 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequiredArgsConstructor
+//@RequiredArgsConstructor
 @RequestMapping(path = "/api/doctor")
 public class DoctorClient {
 
     private final DoctorImpl doctorImpl;
+    public DoctorClient(DoctorImpl doctorImpl){
+        this.doctorImpl = doctorImpl;
+    }
 
     @GetMapping(path = "/{id}")
     public ResponseEntity<DoctorDto> getDoctorById(@PathVariable Long id){

@@ -10,10 +10,16 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 @Service
-@RequiredArgsConstructor
+//@RequiredArgsConstructor
 public class PatientImpl implements Patient {
     private final PatientRepository patientRepository;
     private final ModelMapper modelMapper;
+
+    public PatientImpl(PatientRepository patientRepository, ModelMapper modelMapper){
+        this.modelMapper = modelMapper;
+        this.patientRepository = patientRepository;
+    }
+
     @Override
     public List<PatientDto> getAllPatient() {
         List<PatientEntity> patientEntities = patientRepository.findAll();
