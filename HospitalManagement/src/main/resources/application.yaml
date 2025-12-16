@@ -26,8 +26,5 @@ spring:
     init:
       mode: always
 
-  security:
-    enabled: false
-
   jwt:
     secretKey: asfsad4f5sd4fsd4f5sd4f6sd4fs54df6sdf7g8sd4fgsdf54gsdgdg5f6dfgf85d
