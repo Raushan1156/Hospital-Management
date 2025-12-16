@@ -4,6 +4,7 @@ import com.HospitalManagement.entity.Users;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.security.Keys;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 import javax.crypto.SecretKey;
@@ -14,7 +15,8 @@ import java.util.List;
 @Service
 public class JwtService {
 
-    private final String storedToken = "asfsad4f5sd4fsd4f5sd4f6sd4fs54df6sdf7g8sd4fgsdf54gs";
+    @Value("${spring.jwt.secretKey}")
+    private String storedToken;
 
     // create a jwt token
     public String generateToken(Users users){
@@ -42,8 +44,8 @@ public class JwtService {
 
 //        if(claims.getId()==null)
 //            System.out.print("Id is null. see the value: \n"+claims.getId());
-        System.out.print("\n\nhiiiii");
-        System.out.print(claims);
+        System.out.print("\n\nhiiiii\n\n");
+        System.out.println(claims);
 
 
         return Long.valueOf(claims.getSubject());

@@ -19,7 +19,7 @@ class HospitalManagementApplicationTests {
 
 
 		Long id = jwtService.getUserIdFromToken(token); // This should pass successfully
-		System.out.print(id);
+		System.out.println("Our id is:"+id+" and verification is successful.");
 		Long id1 = jwtService.getUserIdFromToken(token+"1236lkj"); // Fail: btoken.security.SignatureException: JWT signature does not match locally computed signature.
 	}
 
