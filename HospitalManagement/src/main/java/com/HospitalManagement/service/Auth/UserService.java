@@ -6,6 +6,7 @@ import com.HospitalManagement.entity.Users;
 import com.HospitalManagement.repository.UsersRepository;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
+import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
@@ -23,7 +24,7 @@ public class UserService implements UserDetailsService {
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
         System.out.println("Loading user from DB: " + username);
-        return usersRepository.findByUsername(username).orElseThrow(() -> new RuntimeException("User with email: "+username+"is not found in the db"));
+        return usersRepository.findByUsername(username).orElseThrow(() -> new BadCredentialsException("User with email: "+username+"is not found in the db"));
     }
 
     public UserDto newSignUp(SignUpDto signUpDto) {
@@ -31,7 +32,7 @@ public class UserService implements UserDetailsService {
         String username = signUpDto.getUsername();
         boolean isPresent = usersRepository.existsByUsername(username);
         if(isPresent){
-            throw new RuntimeException("This user already present with this username:"+username);
+            throw new BadCredentialsException("This user already present with this username:"+username);
         }
         Users dataTobeSaved = modelMapper.map(signUpDto, Users.class);
         dataTobeSaved.setPassword(passwordEncoder.encode(dataTobeSaved.getPassword()));

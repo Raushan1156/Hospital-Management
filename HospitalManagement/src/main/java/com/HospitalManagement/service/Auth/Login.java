@@ -3,9 +3,12 @@ package com.HospitalManagement.service.Auth;
 import com.HospitalManagement.dto.LoginDto;
 import com.HospitalManagement.entity.Users;
 import lombok.RequiredArgsConstructor;
+import org.springframework.security.authentication.AccountExpiredException;
 import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
+import org.springframework.security.core.AuthenticationException;
 import org.springframework.stereotype.Service;
 
 import java.util.Objects;
@@ -33,10 +36,14 @@ public class Login {
             Users userLoginDetails =(Users) authenticate.getPrincipal();
             System.out.println("Details are:\n" + userLoginDetails);
             return jwtService.generateToken(userLoginDetails);
-        } catch (Exception e) {
-            System.out.println("Authentication failed");
-            e.printStackTrace();
-            throw e; // rethrow
+        } catch (AccountExpiredException ex) {
+            throw new AccountExpiredException("Account Expired Exception has been found.");
+        }
+        catch (BadCredentialsException ex){
+            throw new BadCredentialsException("Please verify your username or password.");
+        }
+        catch (AuthenticationException ex){
+            throw ex;
         }
     }
 }
