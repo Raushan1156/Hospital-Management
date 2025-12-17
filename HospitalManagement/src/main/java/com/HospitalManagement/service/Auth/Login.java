@@ -30,7 +30,7 @@ public class Login {
                                     loginDto.getPassword()
                             )
                     );
-            Users userLoginDetails = (Users) authenticate.getPrincipal();
+            Users userLoginDetails =(Users) authenticate.getPrincipal();
             System.out.println("Details are:\n" + userLoginDetails);
             return jwtService.generateToken(userLoginDetails);
         } catch (Exception e) {

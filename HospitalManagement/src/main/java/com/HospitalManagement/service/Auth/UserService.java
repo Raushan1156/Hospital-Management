@@ -23,11 +23,11 @@ public class UserService implements UserDetailsService {
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
         System.out.println("Loading user from DB: " + username);
-        return usersRepository.findByUsername(username);
+        return usersRepository.findByUsername(username).orElseThrow(() -> new RuntimeException("User with email: "+username+"is not found in the db"));
     }
 
     public UserDto newSignUp(SignUpDto signUpDto) {
-        System.out.println("user Repository proxy: "+usersRepository.getClass()+"\n ModelMapper"+modelMapper.getClass());
+//        System.out.println("user Repository proxy: "+usersRepository.getClass()+"\n ModelMapper"+modelMapper.getClass());
         String username = signUpDto.getUsername();
         boolean isPresent = usersRepository.existsByUsername(username);
         if(isPresent){

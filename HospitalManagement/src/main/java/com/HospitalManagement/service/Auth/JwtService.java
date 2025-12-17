@@ -21,13 +21,15 @@ public class JwtService {
     // create a jwt token
     public String generateToken(Users users){
         String token = Jwts.builder()
-                .subject(users.getId().toString())
+//                .subject(users.getId().toString())
+                .subject(users.getUsername())
                 .claim("username", users.getUsername())
                 .claim("role", List.of("Admin", "User"))
                 .issuedAt(new Date())
-                .expiration(new Date(System.currentTimeMillis()+1000*60))
+                .expiration(new Date(System.currentTimeMillis()+1000*60*5))
                 .signWith(getSecretKey())
                 .compact();
+        System.out.println("Token is:\n"+token);
         return token;
     }
 
@@ -35,7 +37,7 @@ public class JwtService {
         return Keys.hmacShaKeyFor(storedToken.getBytes(StandardCharsets.UTF_8));
     }
 
-    public Long getUserIdFromToken(String token){
+    public String getUserIdFromToken(String token){
         Claims claims = Jwts.parser()
                 .verifyWith(getSecretKey())
                 .build()
@@ -48,6 +50,6 @@ public class JwtService {
         System.out.println(claims);
 
 
-        return Long.valueOf(claims.getSubject());
+        return (claims.getSubject());
     }
 }
