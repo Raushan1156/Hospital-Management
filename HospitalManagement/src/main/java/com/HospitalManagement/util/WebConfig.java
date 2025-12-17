@@ -18,7 +18,8 @@ public class WebConfig{
                 .anyRequest().authenticated()
         )
                 .csrf(csrfConfig -> csrfConfig.disable())
-                .sessionManagement(sessionManagement -> sessionManagement.sessionCreationPolicy(SessionCreationPolicy.STATELESS));
+                .sessionManagement(sessionManagement -> sessionManagement
+                        .sessionCreationPolicy(SessionCreationPolicy.STATELESS));
         return httpSecurity.build();
     }
 }
