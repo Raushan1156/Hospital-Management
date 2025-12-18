@@ -3,10 +3,11 @@ package com.HospitalManagement.Exception;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.security.core.AuthenticationException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
-import javax.naming.AuthenticationException;
+//import javax.naming.AuthenticationException;
 import java.time.LocalDateTime;
 
 @RestControllerAdvice
