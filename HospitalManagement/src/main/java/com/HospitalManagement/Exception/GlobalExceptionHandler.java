@@ -25,11 +25,13 @@ public class GlobalExceptionHandler {
 
     @ExceptionHandler(AuthenticationException.class)
     public ResponseEntity<ApiErrorResponse> authenticationException(AuthenticationException ex){
+        System.out.println("There is error: "+ex.getClass());
         ApiErrorResponse apiErrorResponse = new ApiErrorResponse(
                 LocalDateTime.now(),
                 HttpStatus.UNAUTHORIZED.value(),
                 ex.getMessage(),
                 HttpStatus.UNAUTHORIZED,
+                ex.getClass(),
                 extractErrorLocation(ex)
         );
         return ResponseEntity

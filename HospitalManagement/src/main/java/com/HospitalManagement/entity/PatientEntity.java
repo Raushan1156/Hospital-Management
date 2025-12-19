@@ -1,5 +1,6 @@
 package com.HospitalManagement.entity;
 
+import com.HospitalManagement.enums.BloodGroup;
 import jakarta.persistence.*;
 import lombok.*;
 import lombok.experimental.FieldDefaults;
@@ -16,6 +17,7 @@ import java.util.List;
 @Setter
 @Builder
 @Entity
+@ToString
 @FieldDefaults(level = AccessLevel.PRIVATE)
 @Table(name = "Patient")
 public class PatientEntity {
@@ -27,16 +29,19 @@ public class PatientEntity {
     String gender;
     Date birthDate;
     String email;
-    String bloodGroup;
+    BloodGroup bloodGroup;
 
     @CreationTimestamp
     Instant createdDate;
 
-    @OneToOne(mappedBy = "patientEntity")
-//    @JoinColumn(name = "policy_id")
+    @OneToOne(mappedBy = "patientEntity",
+            cascade = CascadeType.ALL,
+            orphanRemoval = true,
+            fetch = FetchType.LAZY
+    )
     InsuranceEntity insuranceEntity; // inverse side
 
-    @OneToMany(mappedBy = "patientEntity")
-//    @JoinColumn(name = "appointment_id")
-    List<AppointmentEntity> appointmentEntity = new ArrayList<>(); // inverse side
+//    @OneToMany(mappedBy = "patientEntity")
+////    @JoinColumn(name = "appointment_id")
+//    List<AppointmentEntity> appointmentEntity = new ArrayList<>(); // inverse side
 }

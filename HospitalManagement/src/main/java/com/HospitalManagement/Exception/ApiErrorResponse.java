@@ -4,9 +4,7 @@ import lombok.*;
 import lombok.experimental.FieldDefaults;
 import org.springframework.http.HttpStatus;
 
-import java.sql.Timestamp;
 import java.time.LocalDateTime;
-import java.util.Date;
 
 @Getter
 @Setter
@@ -19,5 +17,6 @@ public class ApiErrorResponse {
     int status;
     String errorMessage;
     HttpStatus errorType;
+    Object className;
     String path;
 }

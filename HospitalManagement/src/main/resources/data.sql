@@ -1,7 +1,7 @@
 INSERT INTO patient (id, name, gender, birth_date, email, blood_group, created_date)
 VALUES
-(1, 'Amit Sharma', 'Male', '1990-05-15', 'amit.sharma@gmail.com', 'O+', now()),
-(2, 'Neha Verma', 'Female', '1995-08-20', 'neha.verma@gmail.com', 'A+', now());
+(1, 'Amit Sharma', 'Male', '1990-05-15', 'amit.sharma@gmail.com', 6, now()),
+(2, 'Neha Verma', 'Female', '1995-08-20', 'neha.verma@gmail.com', 0, now());
 
 INSERT INTO insurance (id, policy_number, provider, valid_until, created_at, patient_id)
 VALUES
@@ -20,7 +20,7 @@ VALUES
 (2, 'Orthopedics', now(), 2);
 
 
-INSERT INTO appointment (id, appointment_time, reason, status, patient_id, doctor_id)
-VALUES
-(1, now() + interval '1 day', 'Chest pain', 'SCHEDULED', 1, 1),
-(2, now() + interval '2 days', 'Knee pain', 'CONFIRMED', 2, 2);
+--INSERT INTO appointment (id, appointment_time, reason, status, patient_id, doctor_id)
+--VALUES
+--(1, now() + interval '1 day', 'Chest pain', 'SCHEDULED', 1, 1),
+--(2, now() + interval '2 days', 'Knee pain', 'CONFIRMED', 2, 2);

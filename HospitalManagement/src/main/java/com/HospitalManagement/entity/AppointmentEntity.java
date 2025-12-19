@@ -22,9 +22,9 @@ public class AppointmentEntity {
     String reason;
     String status;
 
-    @ManyToOne
-    @JoinColumn(name = "patient_id")
-    PatientEntity patientEntity;  // owning side
+//    @ManyToOne
+//    @JoinColumn(name = "patient_id")
+//    PatientEntity patientEntity;  // owning side
 
     @ManyToOne
     @JoinColumn(name = "doctor_id")

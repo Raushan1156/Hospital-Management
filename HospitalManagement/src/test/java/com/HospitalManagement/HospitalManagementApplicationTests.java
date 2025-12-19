@@ -1,10 +1,14 @@
 package com.HospitalManagement;
 
+import com.HospitalManagement.entity.PatientEntity;
 import com.HospitalManagement.entity.Users;
+import com.HospitalManagement.repository.PatientRepository;
 import com.HospitalManagement.service.Auth.JwtService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+
+import java.util.Collections;
 
 @SpringBootTest
 class HospitalManagementApplicationTests {

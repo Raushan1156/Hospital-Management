@@ -28,7 +28,7 @@ public class UserService implements UserDetailsService {
     }
 
     public UserDto newSignUp(SignUpDto signUpDto) {
-//        System.out.println("user Repository proxy: "+usersRepository.getClass()+"\n ModelMapper"+modelMapper.getClass());
+        System.out.println("user Repository proxy: "+usersRepository.getClass()+"\n ModelMapper"+modelMapper.getClass());
         String username = signUpDto.getUsername();
         boolean isPresent = usersRepository.existsByUsername(username);
         if(isPresent){
