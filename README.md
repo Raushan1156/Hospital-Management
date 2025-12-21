@@ -29,12 +29,15 @@ The project focuses on **real-world backend engineering practices**, including *
 - **Maven**
 - **Docker**
 - **DBeaver**
+- **Spring Doc (Swagger ui)**
 
 ---
 
 ## Application Ports
 - **Application:** `http://localhost:9001`
 - **PostgreSQL (Docker):** `localhost:9000`
+- **Swagger UI:** `http://localhost:9001/swagger-ui/index.html`
+- **Open API:** `http://localhost:9001/v3/api-docs`
 
 ---
 
@@ -51,6 +54,10 @@ The project focuses on **real-world backend engineering practices**, including *
 ### Patient APIs (Secured)
 - `GET /api/patient` – Fetch all patients
 - `GET /api/patient?id={id}` – Fetch patient by ID
+
+### Spring Doc
+- `GET /swagger-ui/index.html` - See the swagger ui
+- `GET /v3/api-docs` - Check the response schema
 
 > All `/api/**` endpoints require a valid JWT token in the `Authorization` header.
 
