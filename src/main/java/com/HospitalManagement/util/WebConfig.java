@@ -26,8 +26,8 @@ public class WebConfig{
                                 "/v3/api-docs/**",
                                 "/swagger-ui/**",
                                 "/swagger-ui.html").permitAll()
+                        .requestMatchers("/actuator/**").permitAll()
                         .anyRequest().authenticated()
-
         )
                 .csrf(csrfConfig -> csrfConfig.disable())
                 .sessionManagement(sessionManagement -> sessionManagement

@@ -8,7 +8,8 @@ import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import lombok.RequiredArgsConstructor;
-import org.modelmapper.internal.bytebuddy.implementation.bytecode.Throw;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.web.authentication.WebAuthenticationDetailsSource;
@@ -21,6 +22,7 @@ import java.io.IOException;
 @RequiredArgsConstructor
 public class JwtAuthFilter extends OncePerRequestFilter {
 
+    Logger logger = LoggerFactory.getLogger(JwtAuthFilter.class);
     private final UsersRepository usersRepository;
     private final JwtService jwtService;
 
@@ -32,7 +34,9 @@ public class JwtAuthFilter extends OncePerRequestFilter {
                 || path.contentEquals("/v3/api-docs")
                 || path.startsWith("/swagger-ui/")
                 || path.startsWith("/v3/api-docs/")
-                || path.contentEquals("/swagger-ui.html");
+                || path.contentEquals("/swagger-ui.html")
+                || path.startsWith("/actuator/")
+                || path.contentEquals("/actuator");
     }
 
 
