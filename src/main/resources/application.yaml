@@ -37,3 +37,17 @@ springdoc:
   swagger-ui:
     enabled: true
     path: /swagger-ui/index.html
+
+logging:
+  level:
+    com:
+      HospitalManagement:
+        filter: DEBUG
+        util: DEBUG
+
+    root: INFO
+  file:
+    name: log/error.log
+  pattern:
+    console: "%d{yyyy-MM-dd 'T' HH:mm:ss} [%level] %-50c{6} %M:%L [%t] %m%n"
+    file: "%d{yyyy-MM-dd 'T' HH:mm:ss} [%level] %c [%t] %m%n"

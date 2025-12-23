@@ -29,6 +29,7 @@ public class JwtAuthFilter extends OncePerRequestFilter {
     @Override
     protected boolean shouldNotFilter(HttpServletRequest request) {
         String path = request.getServletPath();
+        logger.warn("JWT filter is being skipped for this path {}", path);
         return path.startsWith("/auth/")
                 || path.startsWith("/context-path/")
                 || path.contentEquals("/v3/api-docs")
@@ -46,12 +47,15 @@ public class JwtAuthFilter extends OncePerRequestFilter {
         String requestHeader = request.getHeader("Authorization"); // it will be in form of Bearer sdfasd8s7d8f54s5dfs8
         if(!requestHeader.startsWith("Bearer ") || requestHeader.isEmpty()){
             System.out.println("Token is invalid. Your token is: "+requestHeader);
+            logger.debug("Token is invalid. Please verify again you token:{}", requestHeader);
             filterChain.doFilter(request, response);
             return ;
         }
 
+        logger.debug("Token is valid format.");
         String token = requestHeader.split("Bearer ")[1];
         String username = jwtService.getUserIdFromToken(token);
+        logger.info("Token is verified. Token belongs to the user: {}",username);
         if(username != null && SecurityContextHolder.getContext().getAuthentication() == null) {
             Users user = usersRepository.findByUsername(username).orElseThrow(() -> new RuntimeException("User not found with username: " + username));
             UsernamePasswordAuthenticationToken authenticationToken =

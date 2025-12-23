@@ -1,0 +1,83 @@
+2025-12-23 T 08:43:16 [INFO] com.HospitalManagement.HospitalManagementApplication [main] Starting HospitalManagementApplication using Java 21.0.3 with PID 8460 (C:\Users\Raushan\Desktop\Raushan\Coding-shuttle\Projects\Hospital-Management\target\classes started by Raushan in C:\Users\Raushan\Desktop\Raushan\Coding-shuttle\Projects\Hospital-Management)
+2025-12-23 T 08:43:16 [INFO] com.HospitalManagement.HospitalManagementApplication [main] No active profile set, falling back to 1 default profile: "default"
+2025-12-23 T 08:43:19 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-23 T 08:43:20 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 315 ms. Found 6 JPA repository interfaces.
+2025-12-23 T 08:43:23 [INFO] org.springframework.boot.tomcat.TomcatWebServer [main] Tomcat initialized with port 9001 (http)
+2025-12-23 T 08:43:23 [INFO] org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2025-12-23 T 08:43:23 [INFO] org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/11.0.14]
+2025-12-23 T 08:43:23 [INFO] org.springframework.boot.web.context.servlet.WebApplicationContextInitializer [main] Root WebApplicationContext: initialization completed in 7200 ms
+2025-12-23 T 08:43:24 [INFO] org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-23 T 08:43:24 [INFO] org.hibernate.Version [main] HHH000412: Hibernate ORM core version 7.1.8.Final
+2025-12-23 T 08:43:26 [INFO] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-23 T 08:43:26 [INFO] com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2025-12-23 T 08:43:27 [INFO] com.zaxxer.hikari.pool.HikariPool [main] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@694b1ddb
+2025-12-23 T 08:43:27 [INFO] com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2025-12-23 T 08:43:27 [WARN] org.hibernate.orm.deprecation [main] HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-23 T 08:43:27 [INFO] org.hibernate.orm.connections.pooling [main] HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:9000/testDB]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 18.1
+	Default catalog/schema: testDB/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-23 T 08:43:32 [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-23 T 08:43:32 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-23 T 08:43:33 [INFO] org.springframework.data.jpa.repository.query.QueryEnhancerFactories [main] Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-12-23 T 08:43:34 [DEBUG] com.HospitalManagement.filter.JwtAuthFilter [main] Filter 'jwtAuthFilter' configured for use
+2025-12-23 T 08:43:35 [INFO] org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer [main] Global AuthenticationManager configured with UserDetailsService bean with name userService
+2025-12-23 T 08:43:35 [WARN] org.springframework.boot.jpa.autoconfigure.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-23 T 08:43:36 [INFO] com.HospitalManagement.util.WebConfig [main] Security filter chain finished. httpsSecurity data is: org.springframework.security.config.annotation.web.builders.HttpSecurity@6efd83ac
+2025-12-23 T 08:43:39 [INFO] org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [main] Exposing 1 endpoint beneath base path '/actuator'
+2025-12-23 T 08:43:39 [INFO] org.springframework.boot.tomcat.TomcatWebServer [main] Tomcat started on port 9001 (http) with context path '/'
+2025-12-23 T 08:43:39 [INFO] com.HospitalManagement.HospitalManagementApplication [main] Started HospitalManagementApplication in 24.203 seconds (process running for 25.058)
+2025-12-23 T 08:43:39 [WARN] org.springdoc.core.events.SpringDocAppInitializer [main] SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2025-12-23 T 08:43:39 [WARN] org.springdoc.core.events.SpringDocAppInitializer [main] SpringDoc /swagger-ui/index.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2025-12-23 T 08:44:55 [INFO] org.springframework.boot.tomcat.GracefulShutdown [SpringApplicationShutdownHook] Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-23 T 08:44:55 [INFO] org.springframework.boot.tomcat.GracefulShutdown [tomcat-shutdown] Graceful shutdown complete
+2025-12-23 T 08:44:55 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-23 T 08:44:55 [INFO] com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2025-12-23 T 08:44:55 [INFO] com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2025-12-23 T 08:44:59 [INFO] com.HospitalManagement.HospitalManagementApplication [main] Starting HospitalManagementApplication using Java 21.0.3 with PID 16048 (C:\Users\Raushan\Desktop\Raushan\Coding-shuttle\Projects\Hospital-Management\target\classes started by Raushan in C:\Users\Raushan\Desktop\Raushan\Coding-shuttle\Projects\Hospital-Management)
+2025-12-23 T 08:44:59 [INFO] com.HospitalManagement.HospitalManagementApplication [main] No active profile set, falling back to 1 default profile: "default"
+2025-12-23 T 08:45:03 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-23 T 08:45:03 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 368 ms. Found 6 JPA repository interfaces.
+2025-12-23 T 08:45:07 [INFO] org.springframework.boot.tomcat.TomcatWebServer [main] Tomcat initialized with port 9001 (http)
+2025-12-23 T 08:45:07 [INFO] org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2025-12-23 T 08:45:07 [INFO] org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/11.0.14]
+2025-12-23 T 08:45:07 [INFO] org.springframework.boot.web.context.servlet.WebApplicationContextInitializer [main] Root WebApplicationContext: initialization completed in 8393 ms
+2025-12-23 T 08:45:08 [INFO] org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-23 T 08:45:08 [INFO] org.hibernate.Version [main] HHH000412: Hibernate ORM core version 7.1.8.Final
+2025-12-23 T 08:45:10 [INFO] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-23 T 08:45:11 [INFO] com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2025-12-23 T 08:45:11 [INFO] com.zaxxer.hikari.pool.HikariPool [main] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1ecec098
+2025-12-23 T 08:45:11 [INFO] com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2025-12-23 T 08:45:11 [WARN] org.hibernate.orm.deprecation [main] HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-23 T 08:45:12 [INFO] org.hibernate.orm.connections.pooling [main] HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:9000/testDB]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 18.1
+	Default catalog/schema: testDB/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-23 T 08:45:16 [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-23 T 08:45:16 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-23 T 08:45:16 [INFO] org.springframework.data.jpa.repository.query.QueryEnhancerFactories [main] Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-12-23 T 08:45:17 [DEBUG] com.HospitalManagement.filter.JwtAuthFilter [main] Filter 'jwtAuthFilter' configured for use
+2025-12-23 T 08:45:17 [INFO] org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer [main] Global AuthenticationManager configured with UserDetailsService bean with name userService
+2025-12-23 T 08:45:17 [WARN] org.springframework.boot.jpa.autoconfigure.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-23 T 08:45:18 [INFO] com.HospitalManagement.util.WebConfig [main] Security filter chain finished. httpsSecurity data is: org.springframework.security.config.annotation.web.builders.HttpSecurity@6c6fdf5d
+2025-12-23 T 08:45:19 [INFO] org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [main] Exposing 1 endpoint beneath base path '/actuator'
+2025-12-23 T 08:45:19 [INFO] org.springframework.boot.tomcat.TomcatWebServer [main] Tomcat started on port 9001 (http) with context path '/'
+2025-12-23 T 08:45:19 [INFO] com.HospitalManagement.HospitalManagementApplication [main] Started HospitalManagementApplication in 21.76 seconds (process running for 22.637)
+2025-12-23 T 08:45:19 [WARN] org.springdoc.core.events.SpringDocAppInitializer [main] SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2025-12-23 T 08:45:19 [WARN] org.springdoc.core.events.SpringDocAppInitializer [main] SpringDoc /swagger-ui/index.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
