@@ -3,6 +3,8 @@ package com.HospitalManagement.service.Auth;
 import com.HospitalManagement.dto.LoginDto;
 import com.HospitalManagement.entity.Users;
 import lombok.RequiredArgsConstructor;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.security.authentication.AccountExpiredException;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.BadCredentialsException;
@@ -19,6 +21,7 @@ public class Login {
 
     private final AuthenticationManager authenticationManager;
     private final JwtService jwtService;
+    Logger logger = LoggerFactory.getLogger(Login.class);
 
     public String login(LoginDto loginDto) {
 
@@ -33,8 +36,9 @@ public class Login {
                                     loginDto.getPassword()
                             )
                     );
+            logger.info("Data returned by Auth Manager:{}", authenticate);
             Users userLoginDetails =(Users) authenticate.getPrincipal();
-            System.out.println("Details are:\n" + userLoginDetails);
+            logger.info("Details are:\n{}", userLoginDetails);
             return jwtService.generateToken(userLoginDetails);
         } catch (AccountExpiredException ex) {
             throw new AccountExpiredException("Account Expired Exception has been found.");

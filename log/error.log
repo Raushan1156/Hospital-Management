@@ -1,19 +1,25 @@
-2025-12-23 T 08:43:16 [INFO] com.HospitalManagement.HospitalManagementApplication [main] Starting HospitalManagementApplication using Java 21.0.3 with PID 8460 (C:\Users\Raushan\Desktop\Raushan\Coding-shuttle\Projects\Hospital-Management\target\classes started by Raushan in C:\Users\Raushan\Desktop\Raushan\Coding-shuttle\Projects\Hospital-Management)
-2025-12-23 T 08:43:16 [INFO] com.HospitalManagement.HospitalManagementApplication [main] No active profile set, falling back to 1 default profile: "default"
-2025-12-23 T 08:43:19 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-12-23 T 08:43:20 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 315 ms. Found 6 JPA repository interfaces.
-2025-12-23 T 08:43:23 [INFO] org.springframework.boot.tomcat.TomcatWebServer [main] Tomcat initialized with port 9001 (http)
-2025-12-23 T 08:43:23 [INFO] org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
-2025-12-23 T 08:43:23 [INFO] org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/11.0.14]
-2025-12-23 T 08:43:23 [INFO] org.springframework.boot.web.context.servlet.WebApplicationContextInitializer [main] Root WebApplicationContext: initialization completed in 7200 ms
-2025-12-23 T 08:43:24 [INFO] org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-12-23 T 08:43:24 [INFO] org.hibernate.Version [main] HHH000412: Hibernate ORM core version 7.1.8.Final
-2025-12-23 T 08:43:26 [INFO] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-12-23 T 08:43:26 [INFO] com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
-2025-12-23 T 08:43:27 [INFO] com.zaxxer.hikari.pool.HikariPool [main] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@694b1ddb
-2025-12-23 T 08:43:27 [INFO] com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
-2025-12-23 T 08:43:27 [WARN] org.hibernate.orm.deprecation [main] HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-12-23 T 08:43:27 [INFO] org.hibernate.orm.connections.pooling [main] HHH10001005: Database info:
+2025-12-24 T 08:01:46 [WARN] com.zaxxer.hikari.pool.HikariPool [HikariPool-1:housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=20h45m28s925ms147µs800ns).
+2025-12-24 T 08:43:24 [INFO] org.springframework.boot.tomcat.GracefulShutdown [SpringApplicationShutdownHook] Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-24 T 08:43:24 [INFO] org.springframework.boot.tomcat.GracefulShutdown [tomcat-shutdown] Graceful shutdown complete
+2025-12-24 T 08:43:24 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-24 T 08:43:24 [INFO] com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2025-12-24 T 08:43:24 [INFO] com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2025-12-24 T 08:43:31 [INFO] com.HospitalManagement.HospitalManagementApplication [main] Starting HospitalManagementApplication using Java 21.0.3 with PID 2944 (C:\Users\Raushan\Desktop\Raushan\Coding-shuttle\Projects\Hospital-Management\target\classes started by Raushan in C:\Users\Raushan\Desktop\Raushan\Coding-shuttle\Projects\Hospital-Management)
+2025-12-24 T 08:43:31 [INFO] com.HospitalManagement.HospitalManagementApplication [main] No active profile set, falling back to 1 default profile: "default"
+2025-12-24 T 08:43:33 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-24 T 08:43:33 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 89 ms. Found 6 JPA repository interfaces.
+2025-12-24 T 08:43:34 [INFO] org.springframework.boot.tomcat.TomcatWebServer [main] Tomcat initialized with port 9001 (http)
+2025-12-24 T 08:43:34 [INFO] org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2025-12-24 T 08:43:34 [INFO] org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/11.0.14]
+2025-12-24 T 08:43:34 [INFO] org.springframework.boot.web.context.servlet.WebApplicationContextInitializer [main] Root WebApplicationContext: initialization completed in 2874 ms
+2025-12-24 T 08:43:34 [INFO] org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-24 T 08:43:35 [INFO] org.hibernate.Version [main] HHH000412: Hibernate ORM core version 7.1.8.Final
+2025-12-24 T 08:43:35 [INFO] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-24 T 08:43:35 [INFO] com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2025-12-24 T 08:43:36 [INFO] com.zaxxer.hikari.pool.HikariPool [main] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1a85e86e
+2025-12-24 T 08:43:36 [INFO] com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2025-12-24 T 08:43:36 [WARN] org.hibernate.orm.deprecation [main] HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-24 T 08:43:36 [INFO] org.hibernate.orm.connections.pooling [main] HHH10001005: Database info:
 	Database JDBC URL [jdbc:postgresql://localhost:9000/testDB]
 	Database driver: PostgreSQL JDBC Driver
 	Database dialect: PostgreSQLDialect
@@ -25,59 +31,112 @@
 	Pool: DatasourceConnectionProviderImpl
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2025-12-23 T 08:43:32 [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-12-23 T 08:43:32 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-12-23 T 08:43:33 [INFO] org.springframework.data.jpa.repository.query.QueryEnhancerFactories [main] Hibernate is in classpath; If applicable, HQL parser will be used.
-2025-12-23 T 08:43:34 [DEBUG] com.HospitalManagement.filter.JwtAuthFilter [main] Filter 'jwtAuthFilter' configured for use
-2025-12-23 T 08:43:35 [INFO] org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer [main] Global AuthenticationManager configured with UserDetailsService bean with name userService
-2025-12-23 T 08:43:35 [WARN] org.springframework.boot.jpa.autoconfigure.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-12-23 T 08:43:36 [INFO] com.HospitalManagement.util.WebConfig [main] Security filter chain finished. httpsSecurity data is: org.springframework.security.config.annotation.web.builders.HttpSecurity@6efd83ac
-2025-12-23 T 08:43:39 [INFO] org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [main] Exposing 1 endpoint beneath base path '/actuator'
-2025-12-23 T 08:43:39 [INFO] org.springframework.boot.tomcat.TomcatWebServer [main] Tomcat started on port 9001 (http) with context path '/'
-2025-12-23 T 08:43:39 [INFO] com.HospitalManagement.HospitalManagementApplication [main] Started HospitalManagementApplication in 24.203 seconds (process running for 25.058)
-2025-12-23 T 08:43:39 [WARN] org.springdoc.core.events.SpringDocAppInitializer [main] SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
-2025-12-23 T 08:43:39 [WARN] org.springdoc.core.events.SpringDocAppInitializer [main] SpringDoc /swagger-ui/index.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
-2025-12-23 T 08:44:55 [INFO] org.springframework.boot.tomcat.GracefulShutdown [SpringApplicationShutdownHook] Commencing graceful shutdown. Waiting for active requests to complete
-2025-12-23 T 08:44:55 [INFO] org.springframework.boot.tomcat.GracefulShutdown [tomcat-shutdown] Graceful shutdown complete
-2025-12-23 T 08:44:55 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-12-23 T 08:44:55 [INFO] com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
-2025-12-23 T 08:44:55 [INFO] com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
-2025-12-23 T 08:44:59 [INFO] com.HospitalManagement.HospitalManagementApplication [main] Starting HospitalManagementApplication using Java 21.0.3 with PID 16048 (C:\Users\Raushan\Desktop\Raushan\Coding-shuttle\Projects\Hospital-Management\target\classes started by Raushan in C:\Users\Raushan\Desktop\Raushan\Coding-shuttle\Projects\Hospital-Management)
-2025-12-23 T 08:44:59 [INFO] com.HospitalManagement.HospitalManagementApplication [main] No active profile set, falling back to 1 default profile: "default"
-2025-12-23 T 08:45:03 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-12-23 T 08:45:03 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 368 ms. Found 6 JPA repository interfaces.
-2025-12-23 T 08:45:07 [INFO] org.springframework.boot.tomcat.TomcatWebServer [main] Tomcat initialized with port 9001 (http)
-2025-12-23 T 08:45:07 [INFO] org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
-2025-12-23 T 08:45:07 [INFO] org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/11.0.14]
-2025-12-23 T 08:45:07 [INFO] org.springframework.boot.web.context.servlet.WebApplicationContextInitializer [main] Root WebApplicationContext: initialization completed in 8393 ms
-2025-12-23 T 08:45:08 [INFO] org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-12-23 T 08:45:08 [INFO] org.hibernate.Version [main] HHH000412: Hibernate ORM core version 7.1.8.Final
-2025-12-23 T 08:45:10 [INFO] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-12-23 T 08:45:11 [INFO] com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
-2025-12-23 T 08:45:11 [INFO] com.zaxxer.hikari.pool.HikariPool [main] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1ecec098
-2025-12-23 T 08:45:11 [INFO] com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
-2025-12-23 T 08:45:11 [WARN] org.hibernate.orm.deprecation [main] HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-12-23 T 08:45:12 [INFO] org.hibernate.orm.connections.pooling [main] HHH10001005: Database info:
-	Database JDBC URL [jdbc:postgresql://localhost:9000/testDB]
-	Database driver: PostgreSQL JDBC Driver
-	Database dialect: PostgreSQLDialect
-	Database version: 18.1
-	Default catalog/schema: testDB/public
-	Autocommit mode: undefined/unknown
-	Isolation level: READ_COMMITTED [default READ_COMMITTED]
-	JDBC fetch size: none
-	Pool: DatasourceConnectionProviderImpl
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2025-12-23 T 08:45:16 [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-12-23 T 08:45:16 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-12-23 T 08:45:16 [INFO] org.springframework.data.jpa.repository.query.QueryEnhancerFactories [main] Hibernate is in classpath; If applicable, HQL parser will be used.
-2025-12-23 T 08:45:17 [DEBUG] com.HospitalManagement.filter.JwtAuthFilter [main] Filter 'jwtAuthFilter' configured for use
-2025-12-23 T 08:45:17 [INFO] org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer [main] Global AuthenticationManager configured with UserDetailsService bean with name userService
-2025-12-23 T 08:45:17 [WARN] org.springframework.boot.jpa.autoconfigure.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-12-23 T 08:45:18 [INFO] com.HospitalManagement.util.WebConfig [main] Security filter chain finished. httpsSecurity data is: org.springframework.security.config.annotation.web.builders.HttpSecurity@6c6fdf5d
-2025-12-23 T 08:45:19 [INFO] org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [main] Exposing 1 endpoint beneath base path '/actuator'
-2025-12-23 T 08:45:19 [INFO] org.springframework.boot.tomcat.TomcatWebServer [main] Tomcat started on port 9001 (http) with context path '/'
-2025-12-23 T 08:45:19 [INFO] com.HospitalManagement.HospitalManagementApplication [main] Started HospitalManagementApplication in 21.76 seconds (process running for 22.637)
-2025-12-23 T 08:45:19 [WARN] org.springdoc.core.events.SpringDocAppInitializer [main] SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
-2025-12-23 T 08:45:19 [WARN] org.springdoc.core.events.SpringDocAppInitializer [main] SpringDoc /swagger-ui/index.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2025-12-24 T 08:43:37 [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-24 T 08:43:37 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-24 T 08:43:38 [INFO] org.springframework.data.jpa.repository.query.QueryEnhancerFactories [main] Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-12-24 T 08:43:38 [DEBUG] com.HospitalManagement.filter.JwtAuthFilter [main] Filter 'jwtAuthFilter' configured for use
+2025-12-24 T 08:43:38 [INFO] org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer [main] Global AuthenticationManager configured with UserDetailsService bean with name userService
+2025-12-24 T 08:43:38 [WARN] org.springframework.boot.jpa.autoconfigure.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-24 T 08:43:38 [INFO] com.HospitalManagement.util.WebConfig [main] Security filter chain finished. httpsSecurity data is: org.springframework.security.config.annotation.web.builders.HttpSecurity@6a40e660
+2025-12-24 T 08:43:39 [INFO] org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [main] Exposing 1 endpoint beneath base path '/actuator'
+2025-12-24 T 08:43:40 [INFO] org.springframework.boot.tomcat.TomcatWebServer [main] Tomcat started on port 9001 (http) with context path '/'
+2025-12-24 T 08:43:40 [INFO] com.HospitalManagement.HospitalManagementApplication [main] Started HospitalManagementApplication in 9.387 seconds (process running for 11.072)
+2025-12-24 T 08:43:40 [WARN] org.springdoc.core.events.SpringDocAppInitializer [main] SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2025-12-24 T 08:43:40 [WARN] org.springdoc.core.events.SpringDocAppInitializer [main] SpringDoc /swagger-ui/index.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2025-12-24 T 08:43:57 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-9001-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-24 T 08:43:57 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-9001-exec-1] Initializing Servlet 'dispatcherServlet'
+2025-12-24 T 08:43:57 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-9001-exec-1] Completed initialization in 3 ms
+2025-12-24 T 08:43:57 [WARN] com.HospitalManagement.filter.JwtAuthFilter [http-nio-9001-exec-1] JWT filter is being skipped for this path /auth/signup
+2025-12-24 T 08:43:57 [WARN] com.HospitalManagement.filter.JwtAuthFilter [http-nio-9001-exec-1] JWT filter is being skipped for this path /auth/signup
+2025-12-24 T 08:44:09 [WARN] com.HospitalManagement.filter.JwtAuthFilter [http-nio-9001-exec-3] JWT filter is being skipped for this path /auth/login
+2025-12-24 T 08:44:09 [WARN] com.HospitalManagement.filter.JwtAuthFilter [http-nio-9001-exec-3] JWT filter is being skipped for this path /auth/login
+2025-12-24 T 08:44:09 [INFO] com.HospitalManagement.service.Auth.Login [http-nio-9001-exec-3] Data returned by Auth Manager:UsernamePasswordAuthenticationToken [Principal=com.HospitalManagement.entity.Users@4242a0, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[FactorGrantedAuthority [authority=FACTOR_PASSWORD, issuedAt=2025-12-24T03:14:09.302366700Z]]]
+2025-12-24 T 08:44:09 [INFO] com.HospitalManagement.service.Auth.Login [http-nio-9001-exec-3] Details are:
+com.HospitalManagement.entity.Users@4242a0
+2025-12-24 T 09:10:31 [WARN] com.HospitalManagement.filter.JwtAuthFilter [http-nio-9001-exec-5] JWT filter is being skipped for this path /api/doctor/1
+2025-12-24 T 09:10:31 [DEBUG] com.HospitalManagement.filter.JwtAuthFilter [http-nio-9001-exec-5] Token is valid format.
+2025-12-24 T 09:10:31 [ERROR] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] [http-nio-9001-exec-5] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+io.jsonwebtoken.ExpiredJwtException: JWT expired 1282875 milliseconds ago at 2025-12-24T03:19:09.000Z. Current time: 2025-12-24T03:40:31.875Z. Allowed clock skew: 0 milliseconds.
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:688)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:364)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:94)
+	at io.jsonwebtoken.impl.io.AbstractParser.parse(AbstractParser.java:36)
+	at io.jsonwebtoken.impl.io.AbstractParser.parse(AbstractParser.java:29)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseSignedClaims(DefaultJwtParser.java:827)
+	at com.HospitalManagement.service.Auth.JwtService.getUserIdFromToken(JwtService.java:44)
+	at com.HospitalManagement.filter.JwtAuthFilter.doFilterInternal(JwtAuthFilter.java:57)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:244)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:231)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:141)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:110)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:96)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:244)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:231)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:141)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:244)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:231)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:141)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:244)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:231)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:141)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:244)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:231)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:141)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:244)
+	at org.springframework.security.web.ObservationFilterChainDecorator$AroundFilterObservation$SimpleAroundFilterObservation.lambda$wrap$0(ObservationFilterChainDecorator.java:337)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:228)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:141)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:237)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:195)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:317)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:355)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:272)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:110)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1778)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-12-24 T 09:40:08 [WARN] com.zaxxer.hikari.pool.HikariPool [HikariPool-1:housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=10m1s719ms34µs100ns).
+2025-12-24 T 09:52:08 [INFO] org.springframework.boot.tomcat.GracefulShutdown [SpringApplicationShutdownHook] Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-24 T 09:52:08 [INFO] org.springframework.boot.tomcat.GracefulShutdown [tomcat-shutdown] Graceful shutdown complete
+2025-12-24 T 09:52:08 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-24 T 09:52:08 [INFO] com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2025-12-24 T 09:52:08 [INFO] com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.

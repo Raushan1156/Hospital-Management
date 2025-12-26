@@ -48,12 +48,6 @@ logging:
     root: INFO
   file:
     name: log/error.log
-    logback:
-      rolling policy:
-        max-file-size: 10MB              # rollover size
-        max-history: 10                  # keep last 10 files
-        total-size-cap: 100MB            # hard cap (optional)
-        file-name-pattern: logs/login/application-%i.log
   pattern:
     console: "%d{yyyy-MM-dd 'T' HH:mm:ss} [%level] %-50c{6} %M:%L [%t] %m%n"
     file: "%d{yyyy-MM-dd 'T' HH:mm:ss} [%level] %c [%t] %m%n"
